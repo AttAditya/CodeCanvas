@@ -1,0 +1,23 @@
+.block {
+    position: relative;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background-color: #febe24;
+
+    
+    /* box-shadow: 0 0 1rem 0.5rem var(--shadow-color); */
+    
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    cursor: grab;
+    resize: both;
+
+    /* transform: translate(-50%, -50%); */
+
+    user-select: none;
+}
+

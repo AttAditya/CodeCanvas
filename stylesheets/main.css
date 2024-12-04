@@ -1,0 +1,79 @@
+@import url('./external.css');
+@import url('./variables.css');
+@import url('./block.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--font-family);
+}
+
+html, body {
+    background-color: var(--placeholder-color);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+
+    background-color: var(--placeholder-color);
+}
+
+.canvas-container {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+.canvas {
+    position: relative;
+
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    min-width: 110%;
+    min-height: 110%;
+    
+    background-image: var(--canvas-background);
+}
+
+.blocks {
+    position: fixed;
+
+    top: 10%;
+    left: 5rem;
+
+    z-index: 100;
+
+    width: 20rem;
+    height: 80%;
+
+    background-color: var(--base-color);
+    box-shadow: 0 0 1rem 0.5rem var(--shadow-color);
+    
+    overflow: auto;
+    
+    padding: 2rem;
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: self-start;
+
+    gap: 1rem;
+}
+
